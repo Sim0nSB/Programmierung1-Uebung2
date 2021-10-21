@@ -14,8 +14,8 @@ int main(void) {
   //aufgabe2();
   //aufgabe3();
   //aufgabe4();
-  aufgabe5();
-  //aufgabe6();
+  //aufgabe5();
+  aufgabe6();
 
   return 0;
 }
@@ -166,6 +166,45 @@ int aufgabe5(){
 
 //Uebung 2 Aufgabe 6
 int aufgabe6(){
+
+  int value = 0;
+  printf("Bitte geben Sie eine Zahl ein: ");
+  scanf("%d", &value);
+
+  int digit0 = (value / 1000) % 10;   // 1
+  int digit1 = (value / 100) % 10;    // 2
+  int digit2 = (value / 10) % 10;     // 3
+  int digit3 = (value / 1) % 10;      // 4
+
+  
+  
+
+  switch(digit3){
+
+    case 1: printf("eins"); break;
+    case 2: printf("zwei"); break;
+    case 3: printf("drei"); break;
+    case 4: printf("vier"); break;
+    case 5: printf("fünf"); break;
+    case 6: printf("sechs"); break;
+    case 7: printf("sieben"); break;
+    case 8: printf("acht"); break;
+    case 9: printf("neun"); break;
+   
+  }
+
+  switch(digit2){
+
+    case 1: printf("zehn"); break;
+    case 2: printf("zwanzig"); break;
+    case 3: printf("dreißig"); break;
+    case 4: printf("vierzig"); break;
+    case 5: printf("fünfzig"); break;
+    case 6: printf("sechzig"); break;
+    case 7: printf("siebzig"); break;
+    case 8: printf("achtzig"); break;
+    case 9: printf("neunzig"); break;
+  }
 
   return 0;
 }
