@@ -14,8 +14,8 @@ int main(void) {
   //aufgabe2();
   //aufgabe3();
   //aufgabe4();
-  //aufgabe5();
-  aufgabe6();
+  aufgabe5();
+  //aufgabe6();
 
   return 0;
 }
@@ -154,7 +154,7 @@ int aufgabe5(){
 
     printf("%d liegt im Intervall [%d, %d]",zahl, intervallgrenze1, intervallgrenze2);
 
-  }else if(zahl<intervallgrenze1 && zahl>intervallgrenze2){
+  }else{
 
     printf("%d liegt nicht im Intervall [%d, %d]",zahl, intervallgrenze1, intervallgrenze2);
 
@@ -164,7 +164,7 @@ int aufgabe5(){
   return 0;
 }
 
-//Uebung 2 Aufgabe 5
+//Uebung 2 Aufgabe 6
 int aufgabe6(){
 
   return 0;
