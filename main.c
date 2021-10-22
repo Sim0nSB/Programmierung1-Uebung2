@@ -283,6 +283,67 @@ int aufgabe6(){
 
 //Uebung 2 Aufageb 7
 int aufgabe7(){
+  int rechnungsNummer;
+  printf("Berechnung wählen (0...3): ");
+  scanf("%d", &rechnungsNummer);
+
+  double eingabeWeg, eingabeZeit, ausgabeGeschwindigkeit;
+  double eingabeMasse, eingabeBeschleunigung, ausgabeKraft;
+  double eingabeSpannung, eingabeStromstärke, ausgabeWiderstand;
+  double eingabeSpannung2, eingabeStromstärke2, ausgabeLeistung;
+   
+  switch(rechnungsNummer){
+    // Weg/Zeit = Geschwindigkeit
+    case 0: 
+      printf("Spannung[V]: ");
+      scanf("%lf", &eingabeSpannung);
+      printf("Stromstärke[A]: ");
+      scanf("%lf", &eingabeStromstärke);
+
+      ausgabeWiderstand = eingabeWeg/eingabeZeit;
+
+      printf("W = %lf [m/s]", ausgabeWiderstand);
+      break;
+
+      //Masse*Beschleunigung = Kraft
+      case 1: 
+      printf("Masse[kg]: ");
+      scanf("%lf", &eingabeMasse);
+      printf("Beschleunigung[m/s^2]: ");
+      scanf("%lf", &eingabeBeschleunigung);
+
+      ausgabeKraft = eingabeMasse*eingabeBeschleunigung;
+
+      printf("Kraft = %lf [N]", ausgabeKraft);
+      break;
+
+      //Spannung/Stromstärke = Widerstand
+      case 2: 
+      printf("Spannung[V]: ");
+      scanf("%lf", &eingabeSpannung);
+      printf("Stromstärke[A]: ");
+      scanf("%lf", &eingabeStromstärke);
+
+      ausgabeWiderstand = eingabeSpannung/eingabeStromstärke;
+
+      printf("Widerstand = %lf [Ω]", ausgabeWiderstand);
+      break;
+
+      //Spannung*Stromstärke = Leistung
+      case 3: 
+      printf("Spannung[V]: ");
+      scanf("%lf", &eingabeSpannung2);
+      printf("Stromstärke[A]: ");
+      scanf("%lf", &eingabeStromstärke2);
+
+      ausgabeLeistung = eingabeSpannung2*eingabeStromstärke2;
+
+      printf("Leistung = %lf [Watt]", ausgabeLeistung);
+      break;
+  }
 
   
+
+
+  return 0;
 }
