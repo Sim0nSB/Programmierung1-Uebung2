@@ -7,6 +7,7 @@ int aufgabe3();
 int aufgabe4();
 int aufgabe5();
 int aufgabe6();
+int aufgabe7();
 
 int main(void) {
 
@@ -15,7 +16,8 @@ int main(void) {
   //aufgabe3();
   //aufgabe4();
   //aufgabe5();
-  aufgabe6();
+  //aufgabe6();
+  aufgabe7();
 
   return 0;
 }
@@ -176,9 +178,58 @@ int aufgabe6(){
   int digit2 = (value / 10) % 10;     // 3
   int digit3 = (value / 1) % 10;      // 4
 
-  
+  //tausender
+  switch(digit0){
+
+    case 1: printf("eintausend"); break;
+    case 2: printf("zweitausend"); break;
+    case 3: printf("dreitausend"); break;
+    case 4: printf("viertausend"); break;
+    case 5: printf("fünftausend"); break;
+    case 6: printf("sechstausend"); break;
+    case 7: printf("siebentausend"); break;
+    case 8: printf("achttausend"); break;
+    case 9: printf("neuntausend"); break;
+  }
+
+
+
+  //hunderter
+  switch(digit1){
+
+    case 1: printf("einhundert"); break;
+    case 2: printf("zweihundert"); break;
+    case 3: printf("dreihundert"); break;
+    case 4: printf("vierhundert"); break;
+    case 5: printf("fünfhundert"); break;
+    case 6: printf("sechshundert"); break;
+    case 7: printf("siebenhundert"); break;
+    case 8: printf("achthundert"); break;
+    case 9: printf("neunhundert"); break;
+  }
+
   
 
+  //zehner und einer 11-19
+  if(digit2 == 1){
+    switch(digit3){
+    case 0: printf("zehn"); break;
+    case 1: printf("elf"); break;
+    case 2: printf("zwölf"); break;
+    case 3: printf("dreizehn"); break;
+    case 4: printf("vierzehn"); break;
+    case 5: printf("fünfzehn"); break;
+    case 6: printf("sechzehn"); break;
+    case 7: printf("siebzehn"); break;
+    case 8: printf("achtzehn"); break;
+    case 9: printf("neunzehn"); break;
+    }
+  }
+
+  
+  
+  //einer eins bis neun
+  if(digit2 == 0){
   switch(digit3){
 
     case 1: printf("eins"); break;
@@ -190,10 +241,26 @@ int aufgabe6(){
     case 7: printf("sieben"); break;
     case 8: printf("acht"); break;
     case 9: printf("neun"); break;
-   
+  }
   }
 
-  switch(digit2){
+  //zehner 10-90
+  if(digit2 != 0 && digit2!= 1){
+    switch(digit3){
+
+    case 1: printf("einund"); break;
+    case 2: printf("zweiund"); break;
+    case 3: printf("dreiund"); break;
+    case 4: printf("vierund"); break;
+    case 5: printf("fünfund"); break;
+    case 6: printf("sechsund"); break;
+    case 7: printf("siebenund"); break;
+    case 8: printf("achtund"); break;
+    case 9: printf("neunund"); break;
+  }
+
+
+    switch(digit2){
 
     case 1: printf("zehn"); break;
     case 2: printf("zwanzig"); break;
@@ -204,7 +271,18 @@ int aufgabe6(){
     case 7: printf("siebzig"); break;
     case 8: printf("achtzig"); break;
     case 9: printf("neunzig"); break;
+    }
   }
 
+  
+
+
+
   return 0;
+}
+
+//Uebung 2 Aufageb 7
+int aufgabe7(){
+
+  
 }
